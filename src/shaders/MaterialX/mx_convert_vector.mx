@@ -6,13 +6,13 @@
 
 #include "mx_funcs.h"
 
-shader mx_extract_TYPE_SUFFIX
-    [[ string help = "Extract channel 'channenum' from the input "TYPE_STR" clamping out of range bounds"]]
+shader mx_convert_vector_TYPE_SUFFIX
+    [[ string help = "Convert from vector to "TYPE_STR ]]
   (
-    TYPE in = TYPE_DEFAULT_IN,
-    int channelnum = 0,
-    output float out = 0
+    vector in = vector(0),
+    output TYPE out = TYPE_DEFAULT_OUT
+
   )
 {
-    out = extract(in, channelnum);
+    out = convert(in);
 }

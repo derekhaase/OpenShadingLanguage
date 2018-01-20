@@ -754,3 +754,39 @@ float extract(vector v, int i)
 {
     return v[clamp(i, 0, 2)];
 }
+
+color2 convert(vector2 v)
+{
+    return color2(v.x,
+                  v.y);
+}
+
+color convert(vector v)
+{
+    return color(v);
+}
+
+color4 convert(vector4 v)
+{
+    return color4(color(v.x, v.y, v.z),
+                  v.w);
+}
+
+vector2 convert(color2 c)
+{
+    return vector2(c.r,
+                   c.a);
+}
+
+vector convert(color c)
+{
+    return vector(c);
+}
+
+vector4 convert(color4 c)
+{
+    return vector4(c.rgb[0],
+                   c.rgb[1],
+                   c.rgb[2],
+                   c.a);
+}

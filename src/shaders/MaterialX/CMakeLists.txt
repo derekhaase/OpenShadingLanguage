@@ -171,7 +171,12 @@ make_mx_flavors (mx_texcoord.mx         TYPES vector vector2)
 make_mx_flavors (mx_time.mx             TYPES float)
 make_mx_flavors (mx_transpose.mx        TYPES matrix44 matrix33)
 make_mx_flavors (mx_unpremult.mx        TYPES color color2 color4)
-
+make_mx_flavors (mx_convert_vector2.mx  TYPES color2)
+make_mx_flavors (mx_convert_vector.mx   TYPES color)
+make_mx_flavors (mx_convert_vector4.mx  TYPES color4)
+make_mx_flavors (mx_convert_color2.mx   TYPES vector2)
+make_mx_flavors (mx_convert_color.mx    TYPES vector)
+make_mx_flavors (mx_convert_color4.mx   TYPES vector4)
 
 add_custom_target (mxshaders ALL
                    DEPENDS ${mx_shader_objs}

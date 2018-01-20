@@ -4,7 +4,6 @@
 #pragma once
 #define VECTOR2_H
 
-
 // vector2 is a 2D vector
 struct vector2
 {
