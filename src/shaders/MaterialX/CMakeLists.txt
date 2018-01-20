@@ -116,7 +116,7 @@ make_mx_flavors (
 # MX shaders that come in flavors for all color/vector types.
 make_mx_flavors (
             mx_add_float.mx mx_atan2_float.mx mx_clamp_float.mx mx_contrast_float.mx
-            mx_replicate.mx
+            mx_replicate.mx mx_extract.mx
             mx_divide_float.mx mx_power_float.mx mx_fractal3d_fa.mx
             mx_invert_float.mx mx_max_float.mx mx_min_float.mx
             mx_modulo_float.mx mx_multiply_float.mx mx_noise2d_fa.mx

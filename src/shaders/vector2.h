@@ -310,3 +310,14 @@ vector2 atan2(vector2 a, vector2 b)
     return vector2(atan2(a.x, b.x),
                   atan2(a.y, b.y));
 }
+
+float extract(vector2 a, int i)
+{
+    int idx = clamp(i, 0, 1);
+
+    if (idx == 0){
+      return a.x;
+    }
+
+    return a.y;
+}

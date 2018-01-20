@@ -362,3 +362,18 @@ vector4 atan2(vector4 a, vector4 b)
                    atan2(a.z, b.z),
                    atan2(a.w, b.w));
 }
+
+float extract(vector4 a, int i)
+{
+    int idx = clamp(i, 0, 3);
+
+    if (idx == 0){
+      return a.x;
+    } else if (idx == 1){
+        return a.y;
+    } else if (idx == 2){
+        return a.z;
+    }
+
+    return a.w;
+}

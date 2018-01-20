@@ -290,9 +290,19 @@ color4 atan2(color4 a, float f)
                   atan2(a.a, f));
 }
 
-
 color4 atan2(color4 a, color4 b)
 {
     return color4(atan2(a.rgb, b.rgb),
                   atan2(a.a, b.a));
+}
+
+float extract(color4 a, int i)
+{
+    int idx = clamp(i, 0, 3);
+
+    if (idx < 3){
+      return a.rgb[idx];
+    }
+
+    return a.a;
 }

@@ -306,6 +306,8 @@ BUILD_DICT = {
     'mx_unpremult': ['color', 'color2', 'color4'],
     'mx_mult_surfaceshader': ['color', 'float'],
     'mx_replicate' : ['color', 'color2', 'color4', 'vector', 'vector2', 'vector4'],
+    'mx_extract' : ['color', 'color2', 'color4', 'vector', 'vector2', 'vector4'],
+
 }
 
 # open_mx_file:  open a file on disk and return its contents

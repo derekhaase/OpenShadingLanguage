@@ -745,4 +745,12 @@ vector4 pack (color rgb, float alpha)
     return vector4 (rgb[0], rgb[1], rgb[2], alpha);
 }
 
+float extract(color c, int i)
+{
+    return c[clamp(i, 0, 2)];
+}
 
+float extract(vector v, int i)
+{
+    return v[clamp(i, 0, 2)];
+}

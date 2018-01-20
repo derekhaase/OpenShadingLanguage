@@ -293,3 +293,14 @@ color2 atan2(color2 a, color2 b)
     return color2(atan2(a.r, b.r),
                   atan2(a.a, b.a));
 }
+
+float extract(color2 a, int i)
+{
+    int idx = clamp(i, 0, 1);
+
+    if (idx == 0){
+      return a.r;
+    }
+
+    return a.a;
+}
