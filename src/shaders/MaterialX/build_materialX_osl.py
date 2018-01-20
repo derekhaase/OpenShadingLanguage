@@ -313,6 +313,7 @@ BUILD_DICT = {
     'mx_convert_color2' : ['vector2'],
     'mx_convert_color' :  ['vector'],
     'mx_convert_color4' : ['vector4'],
+    'mx_matrix_invert'  : ['matrix44', 'matrix33'],
 }
 
 # open_mx_file:  open a file on disk and return its contents

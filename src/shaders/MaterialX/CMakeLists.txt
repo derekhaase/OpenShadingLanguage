@@ -177,6 +177,7 @@ make_mx_flavors (mx_convert_vector4.mx  TYPES color4)
 make_mx_flavors (mx_convert_color2.mx   TYPES vector2)
 make_mx_flavors (mx_convert_color.mx    TYPES vector)
 make_mx_flavors (mx_convert_color4.mx   TYPES vector4)
+make_mx_flavors (mx_matrix_invert.mx    TYPES matrix44 matrix33)
 
 add_custom_target (mxshaders ALL
                    DEPENDS ${mx_shader_objs}
