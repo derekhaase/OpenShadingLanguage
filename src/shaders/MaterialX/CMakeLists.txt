@@ -102,10 +102,10 @@ endmacro()
 make_mx_flavors (
             mx_absval.mx mx_acos.mx mx_add.mx mx_asin.mx mx_atan2.mx
             mx_blur.mx mx_ceil.mx mx_clamp.mx mx_compare.mx
-            mx_constant.mx mx_contrast.mx mx_cos.mx mx_divide.mx mx_dot.mx
+            mx_constant.mx mx_contrast.mx mx_cos.mx mx_dot.mx
             mx_exp.mx mx_power.mx mx_floor.mx mx_fractal3d.mx mx_geomattrvalue.mx
             mx_image.mx mx_invert.mx mx_ln.mx mx_max.mx mx_min.mx mx_mix.mx
-            mx_modulo.mx mx_multiply.mx mx_noise2d.mx mx_noise3d.mx
+            mx_modulo.mx mx_noise2d.mx mx_noise3d.mx
             mx_ramp4.mx mx_ramplr.mx mx_ramptb.mx mx_remap.mx
             mx_sin.mx mx_smoothstep.mx mx_splitlr.mx mx_splittb.mx mx_sqrt.mx mx_subtract.mx
             mx_switch.mx mx_swizzle_color.mx mx_swizzle_color2.mx
@@ -171,6 +171,9 @@ make_mx_flavors (mx_time.mx             TYPES float)
 make_mx_flavors (mx_transpose.mx        TYPES matrix44 matrix33)
 make_mx_flavors (mx_unpremult.mx        TYPES color color2 color4)
 make_mx_flavors (mx_matrix_invert.mx    TYPES matrix44 matrix33)
+make_mx_flavors (mx_divide.mx           TYPES float color color2 color4 vector vector2 vector4 matrix44 matrix33)
+make_mx_flavors (mx_multiply.mx         TYPES float color color2 color4 vector vector2 vector4 matrix44 matrix33)
+
 
 add_custom_target (mxshaders ALL
                    DEPENDS ${mx_shader_objs}
