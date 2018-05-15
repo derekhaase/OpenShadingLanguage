@@ -116,11 +116,10 @@ make_mx_flavors (
 # MX shaders that come in flavors for all color/vector types.
 make_mx_flavors (
             mx_add_float.mx mx_atan2_float.mx mx_clamp_float.mx mx_contrast_float.mx
-            mx_replicate.mx mx_extract.mx
             mx_divide_float.mx mx_power_float.mx mx_fractal3d_fa.mx
             mx_invert_float.mx mx_max_float.mx mx_min_float.mx
             mx_modulo_float.mx mx_multiply_float.mx mx_noise2d_fa.mx
-            mx_noise3d_fa.mx mx_pack.mx mx_remap_float.mx
+            mx_noise3d_fa.mx mx_remap_float.mx
             mx_smoothstep_float.mx mx_subtract_float.mx mx_swizzle_float.mx
     TYPES   color color2 color4 vector vector2 vector4)
 
@@ -157,10 +156,10 @@ make_mx_flavors (mx_normal.mx           TYPES vector)
 make_mx_flavors (mx_normalize.mx        TYPES vector vector2 vector4)
 make_mx_flavors (mx_out.mx              TYPES color2 color4)
 make_mx_flavors (mx_over.mx             TYPES color2 color4)
-make_mx_flavors (mx_pack_cc.mx          TYPES color4)
-make_mx_flavors (mx_pack_cf.mx          TYPES color4)
-make_mx_flavors (mx_pack_vf.mx          TYPES vector4)
-make_mx_flavors (mx_pack_vv.mx          TYPES vector4)
+make_mx_flavors (mx_combine_cc.mx       TYPES color4)
+make_mx_flavors (mx_combine_cf.mx       TYPES color4)
+make_mx_flavors (mx_combine_vf.mx       TYPES vector4)
+make_mx_flavors (mx_combine_vv.mx       TYPES vector4)
 make_mx_flavors (mx_position.mx         TYPES vector)
 make_mx_flavors (mx_premult.mx          TYPES color color2 color4)
 make_mx_flavors (mx_rotate2d.mx         TYPES vector2)
@@ -171,12 +170,6 @@ make_mx_flavors (mx_texcoord.mx         TYPES vector vector2)
 make_mx_flavors (mx_time.mx             TYPES float)
 make_mx_flavors (mx_transpose.mx        TYPES matrix44 matrix33)
 make_mx_flavors (mx_unpremult.mx        TYPES color color2 color4)
-make_mx_flavors (mx_convert_vector2.mx  TYPES color2)
-make_mx_flavors (mx_convert_vector.mx   TYPES color)
-make_mx_flavors (mx_convert_vector4.mx  TYPES color4)
-make_mx_flavors (mx_convert_color2.mx   TYPES vector2)
-make_mx_flavors (mx_convert_color.mx    TYPES vector)
-make_mx_flavors (mx_convert_color4.mx   TYPES vector4)
 make_mx_flavors (mx_matrix_invert.mx    TYPES matrix44 matrix33)
 
 add_custom_target (mxshaders ALL

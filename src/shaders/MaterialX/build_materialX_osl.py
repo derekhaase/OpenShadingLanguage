@@ -305,14 +305,6 @@ BUILD_DICT = {
     'mx_triplanarprojection': ALL_TYPES,
     'mx_unpremult': ['color', 'color2', 'color4'],
     'mx_mult_surfaceshader': ['color', 'float'],
-    'mx_replicate' : ['color', 'color2', 'color4', 'vector', 'vector2', 'vector4'],
-    'mx_extract' : ['color', 'color2', 'color4', 'vector', 'vector2', 'vector4'],
-    'mx_convert_vector2' : ['color2'],
-    'mx_convert_vector' :  ['color'],
-    'mx_convert_vector4' : ['color4'],
-    'mx_convert_color2' : ['vector2'],
-    'mx_convert_color' :  ['vector'],
-    'mx_convert_color4' : ['vector4'],
     'mx_matrix_invert'  : ['matrix44', 'matrix33'],
 }
 
